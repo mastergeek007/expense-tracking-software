@@ -23,10 +23,11 @@ A simple and powerful expense tracking web application to manage your income, ex
 
 ## 🚀 Tech Stack
 
-- Frontend: JavaScript, HTML, CSS
-- Backend: Firebase
-- Charts: Chart.js
-- Hosting: Firebase
+- Frontend: JavaScript, ReactJS, HTML, CSS and Tailwind CSS
+- Backend: ExpressJS and Mongoose
+- Charts: ApexCharts
+- Hosting: Firebase ( Frontend )
+- Hosting: Vercel ( Backend )
 
 ---
 
