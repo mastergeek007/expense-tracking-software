@@ -37,3 +37,39 @@ A simple and powerful expense tracking web application to manage your income, ex
 ```bash
 git clone https://github.com/your-username/expense-tracking-software.git
 ```
+
+2. Go to the project folder:
+
+```bash
+cd client
+```
+
+or
+
+```bash
+cd server
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run locally:
+
+```bash
+npm run dev
+```
+
+5. Open in browser:
+
+```bash
+http://localhost:3000
+```
+
+or Server
+
+```bash
+http://localhost:5000
+```
