@@ -1,5 +1,7 @@
 # Expense Tracking Software
 
+![Contribute to this project](https://img.shields.io/badge/contribute-welcome-brightgreen)
+
 A simple and powerful expense tracking web application to manage your income, expenses, and overall finances with ease.
 
 🌐 Live Demo: [Visit Now](https://expense-tracking-software.web.app/)
