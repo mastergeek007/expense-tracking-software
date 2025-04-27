@@ -1,6 +1,6 @@
 # Expense Tracking Software
 
-![Contribute to this project](https://img.shields.io/badge/contribute-welcome-brightgreen)
+![Contribute to this project](https://github.com/your-username/expense-tracking-software.git)
 
 A simple and powerful expense tracking web application to manage your income, expenses, and overall finances with ease.
 
