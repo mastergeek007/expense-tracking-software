@@ -21,23 +21,33 @@ We welcome contributions from everyone. Your support helps make this project bet
 ## Getting Started
 
 1. **Fork** this repository.
+
 2. **Clone** your fork:
+
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/your-username/expense-tracking-software.git
    ```
+
 3. **Create a new branch**:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
+
 4. **Make your changes**.
+
 5. **Commit** your changes:
+
    ```bash
    git commit -m "Brief description of your changes"
    ```
+
 6. **Push** to your fork:
+
    ```bash
    git push origin feature/your-feature-name
    ```
+
 7. **Create a Pull Request** and describe your changes.
 
 ## Code Guidelines
