@@ -144,9 +144,6 @@ const AddFund = () => {
   useEffect(() => {
     if (id && isGetSingleFundSuccess && singleFund) {
       setEditMode(true);
-
-      console.log("singleFund", singleFund);
-
       setFormData({
         category: singleFund.result.category || "",
         amount: singleFund.result.money || "",
@@ -175,7 +172,7 @@ const AddFund = () => {
           </div>
         </div>
       ) : (
-        <div className="modal-box rounded-sm mx-auto">
+        <div className="modal-box w-full rounded-sm mx-auto">
           <form onSubmit={handleSubmit}>
             <h3 className="text-center text-3xl font-semibold mb-10">
               {editMode ? "Edit Fund" : "Add Fund"}

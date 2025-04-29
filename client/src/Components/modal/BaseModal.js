@@ -19,7 +19,7 @@ export default function BaseModal({
         showModal ? "backdrop-enter" : "backdrop-exit"
       }`}
     >
-      <div className="bg-white rounded-lg shadow-lg w-1/3">
+      <div className="bg-white rounded-lg shadow-lg md:w-3/5 lg:w-1/3 w-3/4">
         <form action="" onSubmit={handleSubmit}>
           <div className="border-b p-4">
             <h2 className="text-lg font-bold">{title}</h2>

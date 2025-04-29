@@ -10,7 +10,7 @@ import CategoryLayout from "../../Layout/CategoryLayout";
 import AddFundCategoryModal from "./modal/AddFundCategoryModal";
 
 export const GridLayout = ({ children }) => (
-  <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 justify-center my-10">
+  <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 justify-center my-10">
     {children}
   </div>
 );

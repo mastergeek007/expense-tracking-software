@@ -103,77 +103,79 @@ export default function BaseTable({
   }
 
   return (
-    <div class="overflow-auto min-h-[500px] -z-[999] ">
-      <table class="min-w-full divide-y divide-gray-200">
-        <thead class="bg-primary text-white sticky top-0 z-10">
-          <tr>
-            {columns?.map((column) => (
-              <th
-                key={column.name}
-                onClick={() => onSort(column)}
-                scope="col"
-                class="px-6 py-3 cursor-pointer text-start text-xs font-medium uppercase"
-              >
-                <div className="flex">
-                  <span>{column?.name}</span>
-                  {column?.isSort && (
-                    <div class="flex flex-col gap-0 ml-2">
-                      <div
-                        className="mb-[-6px]"
-                        onClick={() => onSortUp(column)}
-                      >
-                        <ArrowSortUpIcon
-                          color={
-                            sort_by === column?.sort_by && sort_order === "desc"
-                          }
-                        />
-                      </div>
-                      <div onClick={() => onSortDown(column)}>
-                        <ArrowSortDownIcon
-                          color={
-                            sort_by === column?.sort_by && sort_order === "asc"
-                          }
-                        />
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </th>
-            ))}
-
-            {isShowDelete && (
-              <th
-                scope="col"
-                class="px-6 py-3 text-end text-xs font-medium uppercase"
-              >
-                Action
-              </th>
-            )}
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-          {tableRowsData}
-        </tbody>
-        {lists?.length > 0 && total && (
-          <tfoot class="bg-primary text-white">
+    <div className="overflow-x-auto">
+      <div className="min-h-[500px]">
+        <table className="w-full min-w-[600px] divide-y divide-gray-200">
+          <thead className="bg-primary text-white sticky top-0 z-10">
             <tr>
-              <th></th>
-              <th></th>
-              <th class="px-6 py-3 cursor-pointer text-start font-semibold text-sm">
-                Total
-              </th>
-              <th
-                colSpan={2}
-                class="px-6 py-3 cursor-pointer text-start font-semibold text-sm"
-              >
-                {formatNumbersWithCommas(total)} TK
-              </th>
-              <th></th>
-              {isShowDelete && <th></th>}
+              {columns?.map((column) => (
+                <th
+                  key={column.name}
+                  onClick={() => onSort(column)}
+                  scope="col"
+                  className="px-6 py-3 cursor-pointer text-start text-xs font-medium uppercase"
+                >
+                  <div className="flex">
+                    <span>{column?.name}</span>
+                    {column?.isSort && (
+                      <div className="flex flex-col gap-0 ml-2">
+                        <div
+                          className="mb-[-6px]"
+                          onClick={() => onSortUp(column)}
+                        >
+                          <ArrowSortUpIcon
+                            color={
+                              sort_by === column?.sort_by && sort_order === "desc"
+                            }
+                          />
+                        </div>
+                        <div onClick={() => onSortDown(column)}>
+                          <ArrowSortDownIcon
+                            color={
+                              sort_by === column?.sort_by && sort_order === "asc"
+                            }
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </th>
+              ))}
+  
+              {isShowDelete && (
+                <th
+                  scope="col"
+                  className="px-6 py-3 text-end text-xs font-medium uppercase"
+                >
+                  Action
+                </th>
+              )}
             </tr>
-          </tfoot>
-        )}
-      </table>
+          </thead>
+          <tbody className="divide-y divide-gray-200 dark:divide-neutral-700">
+            {tableRowsData}
+          </tbody>
+          {lists?.length > 0 && total && (
+            <tfoot className="bg-primary text-white">
+              <tr>
+                <th></th>
+                <th></th>
+                <th className="px-6 py-3 cursor-pointer text-start font-semibold text-sm">
+                  Total
+                </th>
+                <th
+                  colSpan={2}
+                  className="px-6 py-3 cursor-pointer text-start font-semibold text-sm"
+                >
+                  {formatNumbersWithCommas(total)} TK
+                </th>
+                <th></th>
+                {isShowDelete && <th></th>}
+              </tr>
+            </tfoot>
+          )}
+        </table>
+      </div>
     </div>
   );
 }

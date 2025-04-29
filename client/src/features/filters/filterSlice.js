@@ -40,7 +40,7 @@ const filterSlice = createSlice({
     },
     setRefresh: (state, action) => {
       state.page = "1";
-      state.limit = "20";
+      state.limit = "100";
       state.search = "";
       state.sort_by = "_id";
       state.sort_order = "desc";

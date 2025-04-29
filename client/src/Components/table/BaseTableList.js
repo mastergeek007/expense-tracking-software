@@ -63,10 +63,10 @@ export default function BaseTableList({
   return (
     <div>
       <div className="flex flex-col bg-white rounded-lg">
-        <div className="-m-1.5 overflow-x-auto">
-          <div className="p-1.5 min-w-full inline-block align-middle">
-            <div className="border rounded-lg divide-y divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-              <div className="flex justify-between px-5 items-center">
+        {/* <div className="-m-1.5 overflow-x-auto"> */}
+          <div className="min-w-full inline-block align-middle">
+            <div className="rounded-lg divide-y divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
+              <div className="md:flex grid justify-between px-5 items-center md:py-0 py-3">
                 <div>
                   <h1 className="text-xl font-semibold text-primary capitalize">
                     {title ? title : category}
@@ -75,14 +75,14 @@ export default function BaseTableList({
                     <BreadCrumbs breadcrumbs={breadcrumbs} className="mt-2" />
                   )}
                 </div>
-                <div className="flex">
+                <div className="md:flex items-center gap-3">
                   {isShowSearch && (
-                    <div className="py-3 px-4">
-                      <Search refreshTrigger={refreshTrigger} width="w-64" />
+                    <div className="py-3 w-full">
+                      <Search refreshTrigger={refreshTrigger} width="md:w-64 w-full" />
                     </div>
                   )}
                   {isShowDate && (
-                    <div className="py-3 px-4 w-[300px] z-30">
+                    <div className="py-3 md:w-[300px] w-full z-30">
                       <BaseDatePicker refreshTrigger={refreshTrigger} />
                     </div>
                   )}
@@ -110,7 +110,7 @@ export default function BaseTableList({
               />
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
       {totalPages > 1 && pagination}
 

@@ -88,7 +88,7 @@ const Dashboard = () => {
   return (
     <div className="">
       <div>
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 justify-center">
+        <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 justify-center">
           {boxItems.map((item, index) => (
             <BoxItem
               key={index}
@@ -101,7 +101,7 @@ const Dashboard = () => {
           ))}
         </div>
 
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 justify-center mt-5">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 justify-center mt-5">
           {secondRowItems.map((item, index) => (
             <BoxItem
               key={index}

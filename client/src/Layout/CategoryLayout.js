@@ -17,18 +17,19 @@ const CategoryLayout = ({ children, title = "Categories", setShowModal }) => {
 
   return (
     <div>
-      <div className="lg:flex grid justify-between items-center bg-white p-3 rounded-lg shadow-md gap-3">
+      <div className="sm:flex grid justify-between items-center bg-white p-3 rounded-lg shadow-md gap-3">
         <div>
           <h1 className="text-xl lg:text-center text-left font-semibold text-primary capitalize">
             {title}
           </h1>
         </div>
-        <div className="flex justify-end gap-3">
+        <div className="sm:flex grid justify-end gap-3">
           <div>
             <Search refreshTrigger={refreshTrigger} width="w-64" />
           </div>
+          <div className="flex gap-3 items-center">
           <BaseButton handleClick={handleRefresh}>
-            <RefreshIcon />
+            <RefreshIcon className="text-white size-7" />
           </BaseButton>
           <BaseButton>
             <label htmlFor="category-modal">
@@ -37,6 +38,7 @@ const CategoryLayout = ({ children, title = "Categories", setShowModal }) => {
               </div>
             </label>
           </BaseButton>
+          </div>
         </div>
       </div>
 

@@ -39,7 +39,7 @@ const AddCost = () => {
     useGetUserCostCategoriesQuery({
       user: user?.email,
       page,
-      limit: 20,
+      limit: 100,
       search,
     });
 
@@ -176,7 +176,7 @@ const AddCost = () => {
           </div>
         </div>
       ) : (
-        <div className="modal-box rounded-sm mx-auto">
+        <div className="modal-box w-full rounded-sm mx-auto">
           <form onSubmit={handleSubmit}>
             <h3 className="text-center text-3xl font-semibold mb-10">
               Add Costs
